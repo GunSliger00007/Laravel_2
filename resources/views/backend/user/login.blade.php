@@ -7,6 +7,7 @@
 
             @include('backend.include.flash_message')
             <form action="{{ route('backend.login') }}" method="post">
+                @csrf
                 <div class="input-group mb-3">
                     <input type="email" class="form-control" placeholder="Email" />
                     <div class="input-group-text"><span class="bi bi-envelope"></span></div>
